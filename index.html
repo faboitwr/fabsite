@@ -1,0 +1,189 @@
+<html>
+    <head>
+        <title>home_fdot</title>
+        <link rel = "stylesheet" href = "stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="img/header.png">
+    </head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <body>
+
+        <div class = "mainbox">
+            <div class = "boxtext">
+                <div>
+                    <button class = "button" onclick = "lndmode()">
+                        <div>
+                            <img src = "img/lndm/light_mode_logo.png" class = "light">
+                            <img src = "img/lndm/dark_mode_logo.png" class = "dark">
+                        </div>
+                    </button>
+                </div>
+                
+                <script>
+                function lndmode() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                    }
+                </script>
+
+                <h1 class = "pc">fab's home<br><span class = "span">developer & artist</span></h1>
+                <h1 class = "mobile">fab!</h1>
+
+                <div class = "divbut">
+                    <a href = "#about">
+                        <button class = "button">
+                            <div>
+                                <img src = "img/mainbut/info_light.png" class = "butlight" alt = "Oops! Issues loading.">
+                                <img src = "img/mainbut/info_dark.png" class = "butdark" alt = "Oops! Issues loading.">
+                                <p class = "button">me!</p>
+                            </div>
+                        </button>
+                    </a>
+
+                    <a href = "#dev">
+                        <button class = "button">
+                            <div>
+                                <img src = "img/mainbut/coding_light.png" class = "butlight" alt = "Oops! Issues loading.">
+                                <img src = "img/mainbut/coding_dark.png" class = "butdark" alt = "Oops! Issues loading.">
+                                <p class = "button">dev!</p>
+                            </div>
+                        </button>
+                    </a>
+
+                    <a href = "#art">
+                        <button class = "button">
+                            <div>
+                                <img src = "img/mainbut/art_light.png" class = "butlight" alt = "Oops! Issues loading.">
+                                <img src = "img/mainbut/art_dark.png" class = "butdark" alt = "Oops! Issues loading.">
+                                <p class = "button">art!<p>
+                            </div>
+                        </button>
+                    </a>
+
+                    <a href = "#socials">
+                        <button class = "button">
+                            <div>
+                                <img src = "img/mainbut/links_light.png" class = "butlight" alt = "Oops! Issues loading.">
+                                <img src = "img/mainbut/links_dark.png" class = "butdark" alt = "Oops! Issues loading.">
+                                <p class = "button">socials!<p>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class = "overlay" id = "about">
+                <div class = "popup">
+                    <div>
+                        <h2>hello, i'm fabian.</h2>
+                        <p class = "content">I am a student developer & artist based in Singapore.<br><br>I've been doing computer science/development for the past 7 years and also do some illustrating on the side.<br><br>I'm currently an undergraduate at Nanyang Technological University's College of Computing and Data Science.</p> 
+                    </div>
+                    <a class ="close" href = "#">[ x ]</a>
+                </div>
+            </div>
+
+            <div class = "overlay" id = "dev">
+                <div class = "popup">
+                    <div>
+                        <h2 class = "desktop-only">dev skills</h2>
+                        <div class = "item"><p class = "items">Python</p></div>
+                        <div class = "item"><p class = "items">HTML/CSS</p></div>
+                        <div class = "item"><p class = "items">Lua</p></div>
+                        <div class = "item"><p class = "items">SQL</p></div>
+                        <br><br>
+                        <div class = "item"><p class = "items">Flask</p></div>
+                        <div class = "item"><p class = "items">PyTorch</p></div>
+                        <br><br>
+                        <div class = "item"><p class = "items">VSCode</p></div>
+                        <div class = "item"><p class = "items">DB Browser for SQLite</p></div>
+                        <div class = "item"><p class = "items">MongoDBCompass</p></div>
+                        <div class = "item"><p class = "items">Godot</p></div>
+                        <br><br>
+                        <div class = "item"><p class = "items">NumPy</p></div>
+                        <div class = "item"><p class = "items">Socket</p></div>
+                        <div class = "item"><p class = "items">Requests</p></div>
+                        <div class = "item"><p class = "items">BeautifulSoup</p></div>
+                        <div class = "item"><p class = "items">Discord.py</p></div>
+                        <div class = "item"><p class = "items">PyMongo</p></div>
+                    </div>
+                    <a class = "close" href = "#">[ x ]</a>
+                </div>
+            </div>
+
+            <div class = "overlay" id = "art">
+                <div class = "popup">
+                    <div>
+                        <h2>art stuff</h2>
+                        <p class = "content">All of my stuff is done on <span style = "text-decoration: underline;">Clip Studio Paint</span>, <br>some samples below:</p>
+                        <img src = "img/sample1.png" class = "art" alt = "Oops! Issues loading.">
+                        <img src = "img/sample2.png" class = "art" alt = "Oops! Issues loading.">
+                        <img src = "img/sample3.png" class = "art" alt = "Oops! Issues loading.">
+                        <img src = "img/sample4.png" class = "art" alt = "Oops! Issues loading.">
+                    </div>
+                    <a class = "close" href = "#">[ x ]</a>
+                </div>
+            </div>
+
+            <div class = "overlay" id = "socials">
+                <div class = "popup">
+                    <div>
+                        <a>
+                            <button class = "buttonsocials" onclick = "copyText()">
+                                <script>
+                                    function copyText() {
+                                        navigator.clipboard.writeText
+                                            ("faboitwr@gmail.com");
+                                    }
+                                </script>
+                                <div>
+                                    <img src = "img/socialbut/email_light.png" class = "linkslight">
+                                    <img src = "img/socialbut/email_dark.png" class = "linksdark">
+                                </div>
+                            </button>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/fabian-teo-32b8583b9/" target = "_blank">
+                            <button class = "buttonsocials">
+                                <div>
+                                    <img src = "img/socialbut/linkedin_light.png" class = "linkslight">
+                                    <img src = "img/socialbut/linkedin_dark.png" class = "linksdark">
+                                </div>
+                            </button>
+                        </a>
+
+                        <a href = "https://github.com/faboitwr?tab=repositories" target = "_blank">
+                            <button class = "buttonsocials">
+                                <div>
+                                    <img src = "img/socialbut/git_light.png" class = "linkslight">
+                                    <img src = "img/socialbut/git_dark.png" class = "linksdark">
+                                </div>
+                            </button>
+                        </a>
+
+                        <a href = "https://www.instagram.com/fdawt_/" target = "_blank">
+                            <button class = "buttonsocials">
+                                <div>
+                                    <img src = "img/socialbut/ig_light.png" class = "linkslight">
+                                    <img src = "img/socialbut/ig_dark.png" class = "linksdark">
+                                </div>
+                            </button>
+                        </a>
+                        <p class = "content">The mail button copies my email address to your clipboard, <br>the other buttons open links onto another tab.</p>
+                    </div>
+                    <a class = "close" href = "#">[ x ]</a>
+                </div>
+            </div>
+        </div>
+    
+        <div>
+            <img src = "img/char_l.png" class = "char_l">
+            <img src = "img/char_d.png" class = "char_d">
+        </div>
+        
+        <div class = "footer">
+            <p class = "footer">Last updated May '26 | &#169; 2026 Fabian T.</p>
+        </div>
+    </body>
+</html>
